@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>P01 - Elements</title>
+
+        <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
+        <meta content="width=device-width, initial-scale=1" name="viewport"> 
+        <link href="css/main.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Tenor+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a class="nav-logo-desktop" href="elements.html"><img src="./img/logo_typeface.png" alt="Logo"></a>   
+                <a class="nav-logo-mobile" href="elements.html"><img src="./img/logo.png" alt="Logo"></a>        
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="products.html">Products</a>
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-cart" href="checkout.html"><img src="./img/cart.png" alt="Cart Icon"></a> 
+            </nav>
+        </header>
+
+        <div class="content">
+            <section>
+                <h2>Your Cart</h2>
+                <div class="cart-item">
+                    <img src="https://placehold.co/100x50?text=Cart+Image" alt="Test Cart Item Image" class="cart-img">
+                    <h5>Item Name</h5>
+                    <p class="cart-cost">$80.00 USD</p>
+                </div>
+            
+                <div class="cart-item">
+                    <img src="https://placehold.co/100x50?text=Cart+Image" alt="Test Cart Item Image" class="cart-img">
+                    <h5>Item Name</h5>
+                    <p class="cart-cost">$43.23 USD</p>
+                </div>
+            
+                <h3>Total Cost:</h3>
+                <p>$123.23 USD</p>
+            
+                <a class="text-button" href="payment.html">Checkout</a>
+            </section>
+        </div>
+    </body>
+</html>

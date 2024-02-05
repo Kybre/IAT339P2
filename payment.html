@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>P01 - Elements</title>
+
+        <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
+        <meta content="width=device-width, initial-scale=1" name="viewport"> 
+        <link href="css/main.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Tenor+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a class="nav-logo-desktop" href="elements.html"><img src="./img/logo_typeface.png" alt="Logo"></a>   
+                <a class="nav-logo-mobile" href="elements.html"><img src="./img/logo.png" alt="Logo"></a>       
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="products.html">Products</a>
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-cart" href="checkout.html"><img src="./img/cart.png" alt="Cart Icon"></a> 
+            </nav>
+        </header>
+
+        <div class="content">
+            <section>
+                <h2>Payment Methods</h2>
+                <form action="./pay-confirm.html">
+                    <fieldset class="payment-methods">
+                        <div class="pay-method-item">
+                            <input type="radio" id="card" name="payment" value="card">
+                            <img class="pay-icon" src="./img/card.png" alt="Card Icon">
+                            <label for="card">Credit Card</label>
+                        </div>
+                        
+                        <div class="pay-method-item">
+                            <input type="radio" id="paypal" name="payment" value="paypal">
+                            <img class="pay-icon" src="./img/paypal.png" alt="Card Icon">
+                            <label for="paypal">PayPal</label>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class="payment-items">
+                        <div class="form-item">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" placeholder="John">
+                        </div>
+                            
+                        <div class="form-item">
+                            <label for="fname">Last Name</label>
+                            <input type="text" id="lname" name="lname" placeholder="Smith">
+                        </div>
+    
+                        <div class="form-item">
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" name="email" placeholder="johnsmith@gmail.com">
+                        </div>
+    
+                        <div class="form-item">
+                            <label for="cc-num">Credit Card Number</label>
+                            <input type="text" id="cc-num" name="cc-num" placeholder="0000 0000 0000 0000">
+                        </div>
+
+                        <div class="form-item">
+                            <label for="cvc">Security Code</label>
+                            <input type="text" id="cvc" name="cvc" placeholder="CVC">
+                        </div>
+                        
+                        <div class="form-item">
+                            <label for="expiration">Card Expiration Date</label>
+                            <input type="text" id="expiration" name="expiration" placeholder="MM / YY">
+                        </div>
+                    </fieldset>    
+
+                    <fieldset class="confirm-payment">
+                        <input type="submit" class="confirm-button" value="Confirm">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+
+    </body>
+</html>

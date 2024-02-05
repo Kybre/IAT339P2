@@ -1,0 +1,463 @@
+body{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin: 0;
+    background-color: #FFFAFA;
+}
+
+.content{
+    margin: 2rem;
+}
+
+.element{
+    padding-bottom: 2rem;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: #A0A0A0;
+}
+
+section{
+    margin-bottom: 2rem;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ----------------- INTERACTIVE ELEMENTS -------------------*/
+
+/* Links */
+a.text-link, a.text-link :visited{
+    text-decoration: none;
+    color: blue;
+}
+
+a.text-link:hover {
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    background-color: #202020EE;
+    color: #FFFFFF;
+}
+
+/* Forms */
+label{
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type=text]{
+    width: 100%;
+    font-family: "Montserrat";
+    background-color: #EEEEEE;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    display: block;
+    border-bottom: 2px solid #A0A0A0;
+    margin-bottom: 1rem;
+}
+
+input[type=text]::placeholder{
+    font-family: "Montserrat";
+}
+
+input[type=text]:focus {
+    outline: none;
+    transition: border-bottom 0.25s ease-in-out;
+    border: none;
+    border-bottom: 2px solid #202020;
+}
+
+a.text-button{
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+input[type=reset], input[type=submit], a.text-button{
+    background-color: #202020;
+    font-family: 'Montserrat';
+    color: #F0F0F0;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=reset]:hover, input[type=submit]:hover, a.text-button:hover{
+    background-color: #E88339;
+    transition: background-color 0.25s ease-in-out;
+}
+
+input[type=radio]{
+    cursor: pointer;
+}
+
+.form-item{
+    width: 40%;
+    margin-right: 2rem;
+}
+
+/* Image Overlay */
+/* Source: https://www.w3schools.com/howto/howto_css_image_overlay_title.asp */
+.linked-img {
+    position: relative;
+    width: 22.5%;
+}
+
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    background: #000000;
+    background: #000000AA; /* Black see-through */
+    color: #F0F0F0;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 1.25rem;
+    padding: .5rem 0 .5rem 0;
+    text-align: center;
+}
+
+.linked-img:hover .img-overlay {
+    opacity: 1;
+}
+
+/* Navigation */
+
+nav{
+    display: flex;
+    width: 100%;
+    background-color: #1a1a1a;
+    margin: 0;
+    align-items: center;
+}
+
+nav.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav a.nav-logo-desktop{
+    width: 10%;
+    margin: 1rem;
+}
+
+nav a.nav-logo-mobile{
+    display: none;
+    width: 10%;
+    margin: 1rem;
+}
+
+nav a.nav-cart{
+    margin-left: auto;
+    margin-right: 2rem;
+    width: 2rem;
+}
+
+nav a{
+    display: inline-block;
+    margin: 0 1rem 0 1rem;
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+nav a.nav-link{
+    padding: 1rem 0rem;
+    text-decoration: underline 1.5px solid #F0F0F000;
+    text-underline-offset: 0px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+nav a.nav-link:hover{ /*https://stackoverflow.com/questions/1734618/how-to-increase-the-gap-between-text-and-underlining-in-css*/
+    background-color: #1a1a1a;
+    text-decoration: underline 1.5px solid #F0F0F0FF;
+    text-underline-offset: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+    .linked-img{
+        width: 45%;
+    }
+
+    nav a.nav-logo-desktop{
+        display: none;
+    }
+
+    nav a.nav-logo-mobile{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .linked-img, img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) { /*extreme cases*/
+    nav a.nav-link{
+        display: none;
+    }
+    nav a.nav-logo-mobile{
+        width: 3rem;
+    }
+}
+
+/* ----------------- TEXT ELEMENTS -------------------*/
+
+h1{
+    font-family: 'Tenor Sans';
+    font-size: 3rem;
+}
+
+h2{
+    font-family: 'Tenor Sans';
+    font-size: 2.5rem;
+}
+
+h3{
+    font-family: 'Tenor Sans';
+    font-size: 2rem;
+}
+
+h4{
+    font-family: 'Tenor Sans';
+    font-size: 1.5rem;
+}
+
+h5{
+    font-family: 'Tenor Sans';
+    font-size: 1.25rem;
+}
+
+p{
+    width: 60%;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+    p{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    p{
+        width: 100%;
+    }
+}
+
+/* ----------------- COMBINED ELEMENTS -------------------*/
+/*Product Listing Page*/
+.prod-listing{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/*Product Details Page*/
+.prod-details{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    padding-top: 2rem;
+}
+
+.prod-display{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+    text-align: center;
+}
+
+.prod-info{
+    width: 140%;
+}
+
+.prod-info h2, .prod-info h4{
+    margin: 0 0 1rem 0;
+}
+
+.prod-info h5{
+    margin: 4rem 0 1rem 0;
+}
+
+.prod-info a.text-button{
+    display: inline-block;
+    margin-top: 0.2rem;
+}
+
+.prod-img, .prod-info p{
+    width: 100%;
+}
+
+/*Cart Page*/
+.cart-item{
+    display: flex;
+    width: 50%;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom-color: #A0A0A0;
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+}
+
+.cart-item h5{
+    margin: 0 0 0 1rem;
+}
+
+.cart-img{
+    width: 30%;
+}
+
+.cart-cost{
+    margin: 0 0 0 auto;
+    width: auto;
+}
+
+/*Payment Form Page*/
+.payment-items{
+    display: flex;
+    width: 50%;
+    padding: 2rem;
+    margin: 2rem 1rem;
+    border: 2px solid #C0C0C0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pay-method-item{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.pay-method-item label{
+    margin: 0;
+}
+
+.pay-icon{
+    display: inline-block;
+    width: 2rem;
+    margin: 0 0.5rem
+}
+
+fieldset{
+    border: none;
+}
+
+/*Payment Confirmation Page*/
+.center-content{
+    text-align: center;
+}
+
+.center-content p{
+    width: 100%;
+    margin: 0 auto 2rem auto
+}
+
+.center-content h3{
+    margin-bottom: 1rem;
+}
+
+.center-content img{
+    width: 6rem;
+    margin: 4rem auto 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .prod-listing{
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+    .cart-item{
+        width: 80%;
+    }
+    .payment-items{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .prod-img, .cart-item{
+        width: 100%;
+        object-fit: cover;
+    }
+    .prod-details{
+        padding-top: 1rem;
+        flex-direction: column;
+    }
+    .prod-info{
+        width: 100%;
+    }
+    .payment-items{
+        padding: 2rem 1rem;
+    }
+    .form-item{
+        width: auto;
+    }
+    .cart-item h5{
+        margin: 0;
+    }
+    .cart-img{
+        min-height: 60px;
+        object-fit: cover;
+    }
+}
+
+/* ----------------- BRANDING ELEMENTS -------------------*/
+.logo{
+    width: 5%;
+    margin-bottom: 1rem;
+}
+
+.logo-type{
+    width: 15%;
+}
+
+.brand{
+    width: 40%;
+}
+
+.product{
+    width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+    .logo{
+        width: 15%;
+    }
+    .logo-type{
+        width: 25%;
+    }
+    .brand, .product {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        width: 25%;
+    }
+    .logo-type{
+        width: 35%;
+    }
+    .brand, .product {
+        width: 100%;
+    }
+}
+
+/* ----------------- CITATIONS -------------------*/
+ul.citations li{
+    margin-bottom: 12px;
+}
