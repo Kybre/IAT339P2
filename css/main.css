@@ -132,7 +132,6 @@ input[type=radio]{
 .img-overlay {
     position: absolute;
     bottom: 0;
-    background: #7F6549;
     background: #7F6549AA; /* Medium brown see-through */
     color: #F0F0F0;
     width: 100%;
@@ -196,7 +195,7 @@ nav a.nav-link{
 }
 
 nav a.nav-link:hover{ /*https://stackoverflow.com/questions/1734618/how-to-increase-the-gap-between-text-and-underlining-in-css*/
-    background-color: #1a1a1a;
+    background-color: #443B35;
     text-decoration: underline 1.5px solid #F0F0F0FF;
     text-underline-offset: 6px;
 }
