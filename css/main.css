@@ -13,7 +13,7 @@ body{
     padding-bottom: 2rem;
     border-top-width: 0.15rem;
     border-top-style: solid;
-    border-top-color: #A0A0A0;
+    border-top-color: #C7B299;
 }
 
 section{
@@ -31,7 +31,7 @@ img{
 /* Links */
 a.text-link, a.text-link :visited{
     text-decoration: none;
-    color: blue;
+    color: #4B84F7;
 }
 
 a.text-link:hover {
@@ -55,7 +55,7 @@ input[type=text]{
     outline: none;
     border: none;
     display: block;
-    border-bottom: 2px solid #A0A0A0;
+    border-bottom: 2px solid #C7B299;
     margin-bottom: 1rem;
 }
 
@@ -67,7 +67,7 @@ input[type=text]:focus {
     outline: none;
     transition: border-bottom 0.25s ease-in-out;
     border: none;
-    border-bottom: 2px solid #202020;
+    border-bottom: 2px solid #443B35;
 }
 
 a.text-button{
@@ -76,7 +76,7 @@ a.text-button{
 }
 
 input[type=reset], input[type=submit], a.text-button{
-    background-color: #202020;
+    background-color: #1B1464;
     font-family: 'Montserrat';
     color: #F0F0F0;
     padding: 0.5rem 0.8rem 0.5rem 0.8rem;
@@ -85,7 +85,7 @@ input[type=reset], input[type=submit], a.text-button{
 }
 
 input[type=reset]:hover, input[type=submit]:hover, a.text-button:hover{
-    background-color: #E88339;
+    background-color: #2824E0;
     transition: background-color 0.25s ease-in-out;
 }
 
@@ -129,7 +129,7 @@ input[type=radio]{
 nav{
     display: flex;
     width: 100%;
-    background-color: #1a1a1a;
+    background-color: #443B35;
     margin: 0;
     align-items: center;
 }
@@ -307,7 +307,7 @@ p{
     align-items: center;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
-    border-bottom-color: #A0A0A0;
+    border-bottom-color: #C7B299;
     border-bottom-style: dashed;
     border-bottom-width: 2px;
 }
@@ -331,7 +331,7 @@ p{
     width: 50%;
     padding: 2rem;
     margin: 2rem 1rem;
-    border: 2px solid #C0C0C0;
+    border: 2px solid #F2D9CC;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
