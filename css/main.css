@@ -144,6 +144,11 @@ input[type=radio]{
     text-align: center;
 }
 
+.img-overlay h4{
+    margin: 0;
+    padding: 0;
+}
+
 .linked-img:hover .img-overlay {
     opacity: 1;
 }
@@ -234,28 +239,27 @@ nav a.nav-link:hover{ /*https://stackoverflow.com/questions/1734618/how-to-incre
 /* ----------------- TEXT ELEMENTS -------------------*/
 
 h1{
-    font-family: 'Tenor Sans';
+    font-family: 'Merriweather';
+    font-weight: 700;
     font-size: 3rem;
 }
 
 h2{
-    font-family: 'Tenor Sans';
+    font-family: 'Merriweather';
+    font-weight: 700;
     font-size: 2.5rem;
 }
 
 h3{
-    font-family: 'Tenor Sans';
+    font-family: 'Merriweather';
+    font-weight: 400;
     font-size: 2rem;
 }
 
 h4{
-   font-family: 'Tenor Sans';
+    font-family: 'Merriweather';
+    font-weight: 300;
     font-size: 1.5rem;
-}
-
-h5{
-    font-family: 'Tenor Sans';
-    font-size: 1.25rem;
 }
 
 p{
@@ -311,10 +315,6 @@ p{
     margin: 0 0 1rem 0;
 }
 
-.prod-info h5{
-    margin: 4rem 0 1rem 0;
-}
-
 .prod-info a.text-button{
     display: inline-block;
     margin-top: 0.2rem;
@@ -322,6 +322,10 @@ p{
 
 .prod-img, .prod-info p{
     width: 100%;
+}
+
+.spacer{
+    margin: 4rem 0 1rem 0;
 }
 
 /*Cart Page*/
@@ -339,6 +343,10 @@ p{
 
 .cart-item h5{
     margin: 0 0 0 1rem;
+}
+
+.cart-item p{
+    width: auto;
 }
 
 .cart-img{
@@ -397,7 +405,7 @@ fieldset{
 
 .center-content img{
     width: 6rem;
-    margin: 4rem auto 0 auto;
+    margin: 10rem auto 0 auto;
 }
 
 @media screen and (max-width: 1000px) {
