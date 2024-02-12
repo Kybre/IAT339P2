@@ -29,8 +29,9 @@ body{
 	font-size:1.5rem;
 } */
 
+
 .content{
-    margin: 2rem;
+    margin: 8rem 2rem 2rem 2rem;
 }
 
 .element{
@@ -159,6 +160,7 @@ nav{
 
 nav.sticky{
     position: fixed;
+    min-height: 6rem;
     top: 0;
     z-index: 1;
 }
