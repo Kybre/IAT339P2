@@ -22,6 +22,7 @@ body{
     font-weight: 400;
     margin: 0;
     background-color: #FFFAFA;
+    overflow-x: hidden;
 }
 
 /*nav{
@@ -207,6 +208,69 @@ nav a.nav-link:hover{ /*https://stackoverflow.com/questions/1734618/how-to-incre
     text-underline-offset: 6px;
 }
 
+/*Footer*/
+footer{
+    display: flex;
+    background-color: #443B35;
+    margin: 0;
+    padding: 2rem 5rem;
+}
+.footer-left a.logo{
+    display: block;
+    width: 20%;
+    margin: 1rem 0rem;
+}
+
+footer .footer-left{
+    width: 75%;
+}
+
+footer h4{
+    margin: 0rem;
+    color: #FAFAFA;
+}
+
+footer .text-link{
+    color: #FAFAFA;
+    margin-bottom: 1rem;
+}
+
+footer ul{
+    color: #FAFAFA;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+footer li{
+    margin-bottom: 0.5em;
+}
+
+.socials{
+    display: flex;
+}
+
+.socials img{
+    width: 10%;
+}
+
+/*Hero Banner*/
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placehold.co/2000x750?text=Hero+Image");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -2rem;
+    width: 100vw;
+    height: 80vh;
+    text-align: center;
+}
+
+.hero h1{
+    position: relative;
+    top: 50%;
+    color: #FFFFFF;
+}
+
 @media screen and (max-width: 1000px) {
     .linked-img{
         width: 45%;
@@ -219,11 +283,29 @@ nav a.nav-link:hover{ /*https://stackoverflow.com/questions/1734618/how-to-incre
     nav a.nav-logo-mobile{
         display: inline-block;
     }
+    .footer-left a.logo{
+        width: 40%;
+    }
+    .socials img{
+        width: 15%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .linked-img, img{
         width: 100%;
+    }
+    footer{
+        display: block;
+    }
+    .footer-left{
+        margin-bottom: 2rem;
+    }
+    .footer-left a.logo{
+        width: 100%;
+    }
+    .socials img{
+        width: 20%;
     }
 }
 
