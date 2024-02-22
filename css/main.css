@@ -32,7 +32,7 @@ body{
 
 
 .content{
-    margin: 8rem 2rem 2rem 2rem;
+    margin: 8rem 4rem 2rem 4rem;
 }
 
 .element{
@@ -259,7 +259,7 @@ footer li{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: -2rem;
+    margin: -2rem -4rem;
     width: 100vw;
     height: 80vh;
     text-align: center;
@@ -568,6 +568,18 @@ fieldset{
         width: 35%;
     }
     .brand, .product {
+        width: 100%;
+    }
+}
+
+/* ----------------- PAGES -------------------*/
+.landing{
+    margin: 6rem auto;
+    width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+    .landing{
         width: 100%;
     }
 }
