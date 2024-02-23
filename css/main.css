@@ -155,7 +155,6 @@ input[type=radio]{
 }
 
 /* Navigation */
-
 nav{
     display: flex;
     width: 100%;
@@ -271,15 +270,33 @@ footer li{
     color: #FFFFFF;
 }
 
+/*Bleed*/
+
+.bleed{
+    display: flex;
+    flex-basis: auto;
+    margin: 0rem -4rem;
+    background-color: #443B3588;
+    align-items: center;
+}
+
+.bleed-left{
+    margin: 2rem 4rem;
+    width: 80%;
+}
+
+.bleed-right p{
+    color: #FAFAFA;
+    margin-right: 4rem;
+}
+
 @media screen and (max-width: 1000px) {
     .linked-img{
         width: 45%;
     }
-
     nav a.nav-logo-desktop{
         display: none;
     }
-
     nav a.nav-logo-mobile{
         display: inline-block;
     }
@@ -288,6 +305,10 @@ footer li{
     }
     .socials img{
         width: 15%;
+    }
+    .bleed-left{
+        margin: 2rem 4rem;
+        width: 120%;
     }
 }
 
@@ -306,6 +327,20 @@ footer li{
     }
     .socials img{
         width: 20%;
+    }
+    .bleed{
+        display: block;
+        margin: 0rem -4rem;
+        padding: 2rem;
+    }
+    .bleed-left{
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+    .bleed-right p{
+        text-align: center;
+        margin: 2rem 2rem 0 2rem;
     }
 }
 
@@ -344,24 +379,8 @@ h4{
     font-size: 1.5rem;
 }
 
-p{
-    width: 60%;
-}
-
 .bold{
     font-weight: 500;
-}
-
-@media screen and (max-width: 1000px) {
-    p{
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    p{
-        width: 100%;
-    }
 }
 
 /* ----------------- COMBINED ELEMENTS -------------------*/
@@ -578,9 +597,23 @@ fieldset{
     width: 60%;
 }
 
+.featured-prod{
+    margin: 6rem 0;
+}
+
+@media screen and (max-width: 800px) {
+    .landing{
+        width: 80%;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     .landing{
         width: 100%;
+    }
+    .featured-prod h2{
+        text-align: center;
     }
 }
 
