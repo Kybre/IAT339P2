@@ -336,11 +336,18 @@ footer li{
         padding: 2rem 4rem;
         align-items: center;
     }
-    .footer-left{
+    .footer-left, .footer-right{
         margin-bottom: 2rem;
+        text-align: center;
     }
     .footer-left a.logo{
         width: 80%;
+        margin: 1rem auto;
+    }
+    .socials{
+        width: auto;
+        margin: auto;
+        justify-content: center;
     }
     .socials img{
         width: 2.5rem;
