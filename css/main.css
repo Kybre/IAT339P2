@@ -246,14 +246,15 @@ footer li{
     margin-bottom: 0.5em;
 }
 
-.socials{
-    display: flex;
-    gap: 5%;
+.footer-right li{
+    font-size: 0.85rem;
 }
 
-.socials img{
+.socials{
+    display: flex;
     width: 15%;
-    margin-bottom: 1rem;
+    gap: 5%;
+    margin: 1rem 0;
 }
 
 /*Hero Banner*/
@@ -311,11 +312,17 @@ footer li{
         margin: 2rem 4rem;
         width: 120%;
     }
+    .socials{
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .footer-left a.logo{
         width: 60%;
+    }
+    .socials{
+        width: 40%;
     }
 }
 
