@@ -30,30 +30,33 @@
         </header>
 
         <div class="content">
-            <section>
-                <h2>Your Cart</h2>
-                <div class="cart-item">
-                    <img src="https://placehold.co/100x50?text=Cart+Image" alt="Test Cart Item Image" class="cart-img">
-                    <p>Item Name</p>
-                    <p class="cart-cost">$80.00 USD</p>
+            <h2>Your Cart</h2>
+            <section class="cart">
+                <div class="cart-items-total">
+                    <div class="cart-item">
+                        <img src="https://placehold.co/100x50?text=Cart+Image" alt="Test Cart Item Image" class="cart-img">
+                        <p>Item Name</p>
+                        <p class="cart-cost">$80.00 USD</p>
+                    </div>
+                
+                    <div class="cart-item">
+                        <img src="https://placehold.co/100x50?text=Cart+Image" alt="Test Cart Item Image" class="cart-img">
+                        <p>Item Name</p>
+                        <p class="cart-cost">$43.23 USD</p>
+                    </div>
+                
+                    <div class="cart-total">
+                        <h4>Total Cost:</h4>
+                        <p>$123.23 USD</p>
+                    </div>
                 </div>
-            
-                <div class="cart-item">
-                    <img src="https://placehold.co/100x50?text=Cart+Image" alt="Test Cart Item Image" class="cart-img">
-                    <p>Item Name</p>
-                    <p class="cart-cost">$43.23 USD</p>
-                </div>
-            
-                <div class="cart-total">
-                    <h4>Total Cost:</h4>
-                    <p>$123.23 USD</p>
-                </div>
-
-            
                 <form action="payment.html" class="reservation">
                     <h4>Reservation / Pickup Time:</h4>
                     <input type="datetime-local" id="rsv" name="rsv">
-                    <input type="submit" class="confirm-button" value="Checkout">
+
+                    <fieldset class="confirm-payment">
+                        <input type="submit" class="confirm-button" value="Checkout">
+                    </fieldset>
                 </form>
             </section>
         </div>

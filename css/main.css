@@ -75,7 +75,7 @@ label{
     margin-bottom: 0.5rem;
 }
 
-input[type=text], textarea{
+input[type=text], input[type=datetime-local], textarea{
     width: 100%;
     font-family: Montserrat;
     background-color: #EEEEEE;
@@ -87,11 +87,11 @@ input[type=text], textarea{
     margin-bottom: 1rem;
 }
 
-input[type=text]::placeholder, textarea::placeholder{
+input[type=text]::placeholder, input[type=datetime-local]::placeholder, textarea::placeholder{
     font-family: 'Montserrat';
 }
 
-input[type=text]:focus, textarea:focus{
+input[type=text]:focus, input[type=datetime-local]:focus, textarea:focus{
     outline: none;
     transition: border-bottom 0.25s ease-in-out;
     border: none;
@@ -331,7 +331,7 @@ footer li{
         width: 100%;
     }
     footer{
-        display: block;
+        flex-direction: column;
     }
     .footer-left{
         margin-bottom: 2rem;
@@ -343,7 +343,7 @@ footer li{
         width: 2.5rem;
     }
     .bleed{
-        display: block;
+        flex-direction: column;
         margin: 0rem -4rem;
         padding: 2rem;
     }
@@ -447,13 +447,23 @@ h4{
 }
 
 /*Cart Page*/
+.cart{
+    display: flex;
+    gap: 4rem;
+}
+
+.cart-items-total{
+    width: 60%;
+    padding: 2rem;
+    border: 2px solid #F2D9CC;
+}
+
 .cart-item{
     display: flex;
-    width: 50%;
     gap: 1rem;
     align-items: center;
-    padding-bottom: 2rem;
     margin-bottom: 2rem;
+    padding-bottom: 2rem;
     border-bottom-color: #C7B299;
     border-bottom-style: dashed;
     border-bottom-width: 2px;
@@ -467,6 +477,7 @@ h4{
     width: auto;
 }
 
+
 .cart-img{
     width: 30%;
 }
@@ -477,9 +488,13 @@ h4{
 }
 
 .cart-total{
-    width: 50%;
     display: flex;
+    margin: -1rem 0 0 0;
     justify-content: space-between;
+}
+
+.cart-total h4{
+    margin: auto 0;
 }
 
 .reservation{
@@ -492,13 +507,12 @@ h4{
     margin: 0.5rem 0;
 }
 
-
 /*Payment Form Page*/
 .payment-items{
     display: flex;
     width: 50%;
     padding: 2rem;
-    margin: 2rem 1rem;
+    margin: 2rem 0;
     border: 2px solid #F2D9CC;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -522,6 +536,8 @@ h4{
 
 fieldset{
     border: none;
+    padding: 0;
+    margin: 0;
 }
 
 /*Payment Confirmation Page*/
@@ -569,10 +585,17 @@ fieldset{
         justify-content: space-evenly;
         gap: 1rem;
     }
-    .cart-item{
-        width: 80%;
-    }
     .payment-items{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cart{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .cart-items-total, .reservation{
         width: auto;
     }
 }
