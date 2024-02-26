@@ -190,15 +190,19 @@ nav a.nav-cart{
     width: 2rem;
 }
 
+.navi-links{
+    margin-left: 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
 nav a{
     display: inline-block;
-    margin: 0 1rem 0 1rem;
     color: #F0F0F0;
     text-decoration: none;
 }
 
 nav a.nav-link{
-    padding: 1rem 0rem;
     text-decoration: underline 1.5px solid #F0F0F000;
     text-underline-offset: 0px;
     transition: all 0.4s ease-in-out 0s;
@@ -320,6 +324,9 @@ footer li{
 }
 
 @media screen and (max-width: 800px) {
+    input[type=datetime-local]{
+        width: 80%;
+    }
     .footer-left a.logo{
         width: 60%;
     }
@@ -473,6 +480,10 @@ h4{
     border: 2px solid #F2D9CC;
 }
 
+.cart-items-total h4{
+    flex-grow: 2;
+}
+
 .cart-item{
     display: flex;
     gap: 1rem;
@@ -585,7 +596,7 @@ fieldset{
 .feedback-items{
     width: 50%;
     padding: 2rem;
-    margin: 2rem 1rem;
+    margin: 2rem 0;
     border: 2px solid #F2D9CC;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -624,8 +635,14 @@ fieldset{
         justify-content: space-evenly;
         gap: 1rem;
     }
-    .payment-items{
+    .payment-items, .feedback-items{
         width: auto;
+    }
+    .contact-info{
+        gap: 2rem;
+    }
+    .contact-info h4{
+        margin-bottom: 0;
     }
     .menu, .contact-map{
         width: 80%;
@@ -639,6 +656,10 @@ fieldset{
     }
     .cart-items-total, .reservation{
         width: auto;
+    }
+    .contact-info{
+        flex-direction: column;
+        gap: 0;
     }
 }
 
@@ -654,7 +675,7 @@ fieldset{
     .prod-info{
         width: 100%;
     }
-    .payment-items{
+    .payment-items, .feedback-items{
         padding: 2rem 1rem;
     }
     .form-item{
@@ -669,6 +690,20 @@ fieldset{
     }
     .menu, .contact-map{
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cart-item, .cart-total{
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+    }
+    .cart-cost{
+        margin: 0;
+    }
+    .cart-img{
+        width: 100%;
     }
 }
 
