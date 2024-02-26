@@ -599,8 +599,20 @@ fieldset{
 /* Contact Info */
 .contact-info{
     display: flex;
+    gap: 4rem;
 }
 
+.contact-info h4{
+    margin-bottom: 1rem;
+}
+
+.contact-map{
+    border: 2px solid #F2D9CC;
+    padding: 1rem;
+    width: 60%;
+    height: 60vh;
+    object-fit: cover;
+}
 
 @media screen and (max-width: 1000px) {
     .prod-listing{
@@ -610,7 +622,7 @@ fieldset{
     .payment-items{
         width: auto;
     }
-    .menu{
+    .menu, .contact-map{
         width: 80%;
     }
 }
@@ -650,7 +662,7 @@ fieldset{
         min-height: 60px;
         object-fit: cover;
     }
-    .menu{
+    .menu, .contact-map{
         width: 90%;
     }
 }
