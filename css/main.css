@@ -589,6 +589,12 @@ fieldset{
     width: 60%;
 }
 
+/* Contact Info */
+.contact-info{
+    display: flex;
+}
+
+
 @media screen and (max-width: 1000px) {
     .prod-listing{
         justify-content: space-evenly;
