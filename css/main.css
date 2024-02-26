@@ -508,6 +508,13 @@ fieldset{
 }
 
 /*Payment Confirmation Page*/
+.full-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+}
+
 .center-content{
     text-align: center;
 }
@@ -523,7 +530,7 @@ fieldset{
 
 .center-content img{
     width: 6rem;
-    margin: 10rem auto 0 auto;
+    margin: auto;
 }
 
 /*  FEEDBACK PAGE  */
