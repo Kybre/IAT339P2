@@ -168,6 +168,7 @@ nav{
 nav.sticky{
     position: fixed;
     min-height: 6rem;
+    max-height: 6rem;
     top: 0;
     z-index: 1;
 }
@@ -332,6 +333,8 @@ footer li{
     }
     footer{
         flex-direction: column;
+        padding: 2rem 4rem;
+        align-items: center;
     }
     .footer-left{
         margin-bottom: 2rem;
@@ -580,6 +583,12 @@ fieldset{
     width: 90%;
 }
 
+/*  Menu  */
+.menu{
+    margin: 6rem auto 0 auto;
+    width: 60%;
+}
+
 @media screen and (max-width: 1000px) {
     .prod-listing{
         justify-content: space-evenly;
@@ -587,6 +596,9 @@ fieldset{
     }
     .payment-items{
         width: auto;
+    }
+    .menu{
+        width: 80%;
     }
 }
 
@@ -624,6 +636,9 @@ fieldset{
     .cart-img{
         min-height: 60px;
         object-fit: cover;
+    }
+    .menu{
+        width: 90%;
     }
 }
 
