@@ -281,19 +281,21 @@ footer li{
 .bleed{
     display: flex;
     flex-basis: auto;
-    margin: 0rem -4rem;
+    gap: 4rem;
+    margin: 0 -4rem;
+    padding: 0 4rem;
     background-color: #443B3588;
     align-items: center;
 }
 
-.bleed-left{
-    margin: 2rem 4rem;
+.bleed-image{
+    margin: 2rem 0;
     width: 80%;
 }
 
-.bleed-right p{
+.bleed-text p{
     color: #FAFAFA;
-    margin-right: 4rem;
+    margin: 2rem auto;
 }
 
 @media screen and (max-width: 1000px) {
@@ -309,9 +311,8 @@ footer li{
     .footer-left a.logo{
         width: 40%;
     }
-    .bleed-left{
-        margin: 2rem 4rem;
-        width: 120%;
+    .bleed-image, .bleed-text{
+        width: 100%;
     }
     .socials{
         width: 30%;
@@ -354,15 +355,19 @@ footer li{
     }
     .bleed{
         flex-direction: column;
+        gap: 0;
         margin: 0rem -4rem;
         padding: 2rem;
     }
-    .bleed-left{
+    .bleed-reverse{
+        flex-direction: column-reverse;
+    }
+    .bleed-image{
         width: 100%;
         margin: auto;
         align-items: center;
     }
-    .bleed-right p{
+    .bleed-text p{
         text-align: center;
         margin: 2rem 2rem 0 2rem;
     }
