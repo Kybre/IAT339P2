@@ -18,6 +18,8 @@
 
 
 body{
+    display: flex;
+    flex-direction: column;
     font-family: Montserrat;
     font-weight: 400;
     margin: 0;
@@ -32,7 +34,7 @@ body{
 
 
 .content{
-    margin: 8rem 4rem 2rem 4rem;
+    margin: 6rem 4rem;
 }
 
 .element{
@@ -73,7 +75,7 @@ label{
     margin-bottom: 0.5rem;
 }
 
-input[type=text]{
+input[type=text], textarea{
     width: 100%;
     font-family: Montserrat;
     background-color: #EEEEEE;
@@ -85,11 +87,11 @@ input[type=text]{
     margin-bottom: 1rem;
 }
 
-input[type=text]::placeholder{
+input[type=text]::placeholder, textarea::placeholder{
     font-family: 'Montserrat';
 }
 
-input[type=text]:focus {
+input[type=text]:focus, textarea:focus{
     outline: none;
     transition: border-bottom 0.25s ease-in-out;
     border: none;
@@ -246,10 +248,12 @@ footer li{
 
 .socials{
     display: flex;
+    gap: 5%;
 }
 
 .socials img{
-    width: 10%;
+    width: 15%;
+    margin-bottom: 1rem;
 }
 
 /*Hero Banner*/
@@ -303,12 +307,15 @@ footer li{
     .footer-left a.logo{
         width: 40%;
     }
-    .socials img{
-        width: 15%;
-    }
     .bleed-left{
         margin: 2rem 4rem;
         width: 120%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer-left a.logo{
+        width: 60%;
     }
 }
 
@@ -323,10 +330,10 @@ footer li{
         margin-bottom: 2rem;
     }
     .footer-left a.logo{
-        width: 100%;
+        width: 80%;
     }
     .socials img{
-        width: 20%;
+        width: 2.5rem;
     }
     .bleed{
         display: block;
@@ -350,6 +357,9 @@ footer li{
     }
     nav a.nav-logo-mobile{
         width: 3rem;
+    }
+    .footer-left a.logo{
+        width: 12em;
     }
 }
 
@@ -509,6 +519,20 @@ fieldset{
     margin: 10rem auto 0 auto;
 }
 
+/*  FEEDBACK PAGE  */
+.feedback-items{
+    width: 50%;
+    padding: 2rem;
+    margin: 2rem 1rem;
+    border: 2px solid #F2D9CC;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.feed-item{
+    width: 80%;
+}
+
 @media screen and (max-width: 1000px) {
     .prod-listing{
         justify-content: space-evenly;
@@ -598,7 +622,7 @@ fieldset{
 }
 
 .featured-prod{
-    margin: 6rem 0;
+    margin-top: 6rem;
 }
 
 @media screen and (max-width: 800px) {
