@@ -476,6 +476,23 @@ h4{
     width: auto;
 }
 
+.cart-total{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.reservation h4{
+    margin: 0.5rem 0;
+}
+
+
 /*Payment Form Page*/
 .payment-items{
     display: flex;

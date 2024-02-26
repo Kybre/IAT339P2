@@ -44,10 +44,17 @@
                     <p class="cart-cost">$43.23 USD</p>
                 </div>
             
-                <h3>Total Cost:</h3>
-                <p>$123.23 USD</p>
+                <div class="cart-total">
+                    <h4>Total Cost:</h4>
+                    <p>$123.23 USD</p>
+                </div>
+
             
-                <a class="text-button" href="payment.html">Checkout</a>
+                <form action="payment.html" class="reservation">
+                    <h4>Reservation / Pickup Time:</h4>
+                    <input type="datetime-local" id="rsv" name="rsv">
+                    <input type="submit" class="confirm-button" value="Checkout">
+                </form>
             </section>
         </div>
 
