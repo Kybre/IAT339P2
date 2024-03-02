@@ -292,14 +292,24 @@ footer li{
     align-items: center;
 }
 
+h2.bleed{
+    color: #FAFAFA;
+    padding-top: 2rem;
+}
+
 .bleed-image{
     margin: 2rem 0;
     width: 80%;
 }
 
-.bleed-text p{
+.bleed-text{
     color: #FAFAFA;
     margin: 2rem auto;
+}
+
+.bleed-text a{
+    color: #FAFAFA;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1000px) {
