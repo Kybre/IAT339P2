@@ -270,13 +270,19 @@ footer li{
     background-size: cover;
     margin: -2rem -4rem;
     width: 100vw;
-    height: 80vh;
+    height: 95vh;
     text-align: center;
 }
 
 .hero h1{
     position: relative;
-    top: 50%;
+    top: 40%;
+    color: #FFFFFF;
+}
+
+.hero h3{
+    position: relative;
+    top: 40%;
     color: #FFFFFF;
 }
 
