@@ -305,7 +305,7 @@ h2.bleed{
 
 .bleed-image{
     margin: 2rem 0;
-    width: 80%;
+    width: 60%;
 }
 
 .bleed-text{
@@ -316,6 +316,12 @@ h2.bleed{
 .bleed-text a{
     color: #FAFAFA;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    .bleed-image{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -393,6 +399,9 @@ h2.bleed{
     .bleed-text p{
         text-align: center;
         margin: 2rem 2rem 0 2rem;
+    }
+    .bleed-text h3{
+        text-align: center;
     }
 }
 
@@ -677,9 +686,6 @@ fieldset{
         flex-direction: column;
         gap: 0;
     }
-}
-
-@media screen and (max-width: 600px) {
     .prod-img, .cart-item{
         width: 100%;
         object-fit: cover;
@@ -691,6 +697,9 @@ fieldset{
     .prod-info{
         width: 100%;
     }
+}
+
+@media screen and (max-width: 600px) {
     .payment-items, .feedback-items{
         padding: 2rem 1rem;
     }
