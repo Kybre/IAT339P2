@@ -105,10 +105,10 @@ input[type=text]:focus, input[type=datetime-local]:focus, textarea:focus{
 
 a.text-button{
     text-decoration: none;
-    font-size: 0.9rem;
 }
 
 input[type=reset], input[type=submit], a.text-button{
+    font-size: 1rem;
     background-color: #1B1464;
     font-family: Montserrat;
     color: #F0F0F0;
