@@ -183,7 +183,7 @@ nav{
 
 nav.sticky{
     position: fixed;
-    min-height: 6rem;
+    height: 6rem;
     max-height: 6rem;
     top: 0;
     z-index: 1;
@@ -426,12 +426,27 @@ h2.bleed{
     .bleed-image{
         width: 100%;
     }
+    /*mobile nav*/
+    nav{
+        flex-wrap: wrap;
+    }
+    nav.sticky{
+        height: 8rem;
+        max-height: 12rem;
+    }
+    .navi-links{
+        margin-left: 0;
+        padding: 0 2rem 2rem 2rem;
+        flex-basis: calc(100% - 4rem);
+        gap: 2rem;
+        flex-wrap: wrap;
+        order: 1;
+        text-align: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 450px) { /*extreme cases*/
-    nav a.nav-link{
-        display: none;
-    }
     nav a.nav-logo-mobile{
         width: 3rem;
     }
