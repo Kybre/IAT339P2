@@ -290,16 +290,11 @@ footer li{
     text-align: center;
 }
 
-.hero h1{
+.hero h1, .hero h3{
     position: relative;
     top: 40%;
-    color: #FFFFFF;
-}
-
-.hero h3{
-    position: relative;
-    top: 40%;
-    color: #FFFFFF;
+    color: #FAFAFA;
+    padding: 0 2rem;
 }
 
 /*Bleed*/
@@ -443,15 +438,22 @@ h2.bleed{
         order: 1;
         text-align: center;
         justify-content: center;
+        background-color: #443B35;
+    }
+    .content{
+        margin-top: 8rem;
     }
 }
 
-@media screen and (max-width: 450px) { /*extreme cases*/
+@media screen and (max-width: 490px) { /*extreme cases*/
     nav a.nav-logo-mobile{
         width: 3rem;
     }
     .footer-left a.logo{
         width: 12em;
+    }
+    .content{
+        margin-top: 10rem;
     }
 }
 
