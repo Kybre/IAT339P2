@@ -90,6 +90,15 @@
                         </fieldset>
                     </form>
                 </section>
+
+                <section class="element">
+                    <h3>Datetime Input With Label</h3>
+                    <form>
+                        <div class="form-item">
+                            <input type="datetime-local" id="rsv" name="rsv">
+                        </div>
+                    </form>
+                </section>
             
                 <section class="element">
                     <h3>Image With Link</h3>
@@ -157,6 +166,80 @@
                             <a class="nav-cart" href="checkout.html"><img src="./img/cart.png" alt="Cart Icon"></a> 
                         </nav>
                     </header>
+                </section>
+
+                <section class="element">
+                    <h3>Footer</h3>
+
+                    <footer>
+                        <div class="footer-left">
+                            <a class="logo" href="index.html"><img src="./img/LogoText.png" alt="Logo"></a>
+                            <div class="socials">
+                                <a href="#"><img class="socials-icon" src="./img/socials/socialsX.png" alt="Twitter Icon"></a>
+                                <a href="#"><img class="socials-icon" src="./img/socials/socialsFB.png" alt="Facebook Icon"></a>
+                                <a href="#"><img class="socials-icon" src="./img/socials/socialsInsta.png" alt="Intagram Icon"></a>
+                                <a href="#"><img class="socials-icon" src="./img/socials/socialsMap.png" alt="Maps Icon"></a>
+                            </div>
+                            <ul>
+                                <li><a class="text-link" href="contact.html">Contact Us</a></li>
+                                <li><a class="text-link" href="feedback.html">Give Us Feedback</a></li>
+                                <li>----------------------------</li>
+                                <li><a class="text-link" href="elements.html">Style Guide</a></li>
+                                <li><a class="text-link" href="elements.html#citations">Citations</a></li>
+                                <li><a class="text-link" href="https://github.com/Kybre/IAT339P2">GitHub Repository</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="footer-right">
+                            <h4>Location</h4>
+                            <ul>
+                                <li>123 Lorem Ipsum Ave</li>
+                                <li>Lorem, Ipsum</li>
+                                <li>L0R3M1</li>
+                            </ul>
+                            <h4>Operating Hours</h4>
+                            <ul>
+                                <li>Weekdays: 11am - 11pm</li>
+                                <li>Weekends: 11am - 2am</li>
+                            </ul>
+                        </div>
+                    </footer>
+                </section>
+
+                <section class="element">
+                    <h3>Hero Banner</h3>
+                    <div class="hero">
+                        <h1>Welcome to The Niche</h1>
+                        <h3>Your one-stop shop for a Games and Coffee.</h3>
+                    </div>
+                </section>
+
+                <section class="element">
+                    <h3>Bleed Section</h3>
+                    <div class="featured-event bleed">
+                        <div class="bleed-image">
+                            <img src="https://placehold.co/600x400?text=Placeholder+Image" alt="Chess Game" width="600" height="400">
+                        </div>
+                        <div class="bleed-text">
+                            <h3>Chess Night (March 15th)</h3>
+                            <p>
+                                Once every month we hold a chess tournament at our shop. Chess sets are provided by the store, but you are free to bring your own. Stop by for a night of competative fun. 
+                            </p>
+                            <a class="text-button" href="#"> Sign Up Now </a>
+                        </div>
+                    </div>
+        
+                    <div class="featured-event bleed bleed-reverse">
+                        <div class="bleed-text">
+                            <h3>A Culture of Games</h3>
+                            <p>
+                                The business was founded with the goal of creating a gathering place for members of the gaming comunity, as well as a retreat for cassual gamers and people who may not game in the current market. We welcome all level and type of gamer, and facilitate classic board gaming as well as fantasy, social, and childrens gaming. 
+                            </p>
+                        </div>
+                        <div class="bleed-image">
+                            <img src="https://placehold.co/600x400?text=Placeholder+Image" alt="Test Image">
+                        </div>
+                    </div>
                 </section>
             
                 <section class="element">
@@ -284,23 +367,76 @@
                 <section class="element">
                     <h3>Checkout Cart</h3>
             
-                    <h2>Your Cart</h2>
-                    <div class="cart-item">
-                        <img src="https://placehold.co/100x50?text=Cart+Image" alt="Test Cart Item Image" class="cart-img">
-                        <h5>Item Name</h5>
-                        <p class="cart-cost">$80.00 USD</p>
-                    </div>
-                
-                    <div class="cart-item">
-                        <img src="https://placehold.co/100x50?text=Cart+Image" alt="Test Cart Item Image" class="cart-img">
-                        <h5>Item Name</h5>
-                        <p class="cart-cost">$43.23 USD</p>
-                    </div>
-                
-                    <h3>Total Cost:</h3>
-                    <p>$123.23 USD</p>
-                
-                    <a class="text-button" href="payment.html">Checkout</a>
+                    <h2>Your Resveration</h2>
+                    <section class="cart">
+                        <div class="cart-items-total">
+                            <div class="cart-item">
+                                <img src="https://placehold.co/600x400?text=Placeholder+Image" alt="Ark Nova" class="cart-img" width="100" height="50">
+                                <p>Ark Nova</p>
+                                <p class="cart-cost">$80.00 USD</p>
+                            </div>
+                        
+                            <div class="cart-item">
+                                <img src="https://placehold.co/600x400?text=Placeholder+Image" alt="Test Cart Item Image" class="cart-img" width="100" height="50">
+                                <p>Eclipse</p>
+                                <p class="cart-cost">$70.00 USD</p>
+                            </div>
+                        
+                            <div class="cart-total">
+                                <h4>Total Cost:</h4>
+                                <p>$150.00 USD</p>
+                            </div>
+                        </div>
+                        <form action="payment.html" class="reservation">
+                            <h4>Reservation / Pickup Time:</h4>
+                            <input type="datetime-local" id="rsv" name="rsv">
+        
+                            <fieldset class="confirm-payment">
+                                <input type="submit" class="confirm-button" value="Checkout">
+                            </fieldset>
+                        </form>
+                    </section>
+                </section>
+
+                <section class="element">
+                    <h3>Payment Confirmation</h3>
+
+                    <section class="center-content">
+                        <img src="./img/checkmark.png" alt="Checkmark Icon">
+                        <h3>Purchase Successful!</h3>
+                        <p>You will recieve a confirmation in your email inbox shortly!</p>
+                        <a class="text-button" href="index.html">Back To Home</a>
+                    </section>
+                </section>
+
+                <section class="element">
+                    <h3>Feedback Form</h3>
+
+                    <section class="feedback">
+                        <h2>Give Us Feedback</h2>
+                        <form action="#">
+                            <fieldset class="feedback-items">
+                                <div class="feed-item">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Smith">
+                                </div>
+            
+                                <div class="feed-item">
+                                    <label for="email">Email Address</label>
+                                    <input type="text" id="email" name="email" placeholder="johnsmith@gmail.com">
+                                </div>
+            
+                                <div class="feed-item">
+                                    <label for="feedback">Feedback</label>
+                                    <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Your Feedback Here"></textarea>
+                                </div>
+                            </fieldset>    
+        
+                            <fieldset class="confirm-feedback">
+                                <input type="submit" class="confirm-button" value="Submit">
+                            </fieldset>
+                        </form>
+                    </section>
                 </section>
             </section>
 
@@ -359,7 +495,7 @@
                     <p>Source: https://www.unsplash.com/photos/jack-jack-jack-jack-jack-jack-jack-jack-jack-jack-jack-jack-jack-jack-jack-jack-jack-jack-jack-jack-D3SzBCAeMhQ</p> 
                     
                     <h4> Rentals </h4>
-                    
+
                     <img class = "product" alt="Race For The Galaxy Box" src="img/raceForTheGalaxy.webp" >
                     <p>Source: https://www.boardgamebandit.ca/products/race-for-the-galaxy-board-game-canada </p>
         
@@ -493,5 +629,6 @@
                 </ul>
             </div>
         </footer>
+
     </body>
 </html>

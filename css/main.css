@@ -207,6 +207,7 @@ nav a.nav-cart{
 }
 
 .navi-links{
+    padding: 1.5rem 0;
     margin-left: 1rem;
     display: flex;
     gap: 1.5rem;
@@ -688,10 +689,28 @@ fieldset{
 .contact-info{
     display: flex;
     gap: 4rem;
+    margin-top: 2rem;
 }
 
 .contact-info h4{
-    margin-bottom: 1rem;
+    margin: 0;
+}
+
+.socials-invert{
+    width: 2rem;
+    height: 2rem;
+    filter: invert();
+}
+
+.contact-socials, .contact-heading{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-heading img{
+    width: 2rem;
+    height: 2rem;
 }
 
 .contact-map{
@@ -713,9 +732,6 @@ fieldset{
     }
     .contact-info{
         gap: 2rem;
-    }
-    .contact-info h4{
-        margin-bottom: 0;
     }
     .menu, .contact-map{
         width: 80%;
