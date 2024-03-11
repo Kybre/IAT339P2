@@ -27,6 +27,11 @@ body{
     overflow-x: hidden;
 }
 
+pre {
+	font-family: Montserrat;
+    font-weight: 400;
+}
+
 /*nav{
 	font-family:Bitter;
 	font-size:1.5rem;
