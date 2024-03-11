@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* CSS Document */
+.MenuRow {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+
+}
+
+.MenuSection {
+	flex:1;
+	order:1;
+	flex-basis:auto;
+	align-self:flex-end;
+	
+}
+
+@media (max-width:700px) {
+	
+	.MenuRow{
+		flex-direction:column;
+		justify-content:center;
+	}
+	.MenuSection{
+		align-self:center;
+	}
+}
+
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */

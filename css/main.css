@@ -655,6 +655,9 @@ fieldset{
     object-fit: cover;
 }
 
+
+
+
 @media screen and (max-width: 1000px) {
     .prod-listing{
         justify-content: space-evenly;
