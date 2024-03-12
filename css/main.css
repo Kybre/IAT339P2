@@ -871,4 +871,5 @@ fieldset{
 /* ----------------- CITATIONS -------------------*/
 ul.citations li{
     margin-bottom: 12px;
+    list-style-type: circle;
 }
